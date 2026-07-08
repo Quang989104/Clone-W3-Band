@@ -1,8 +1,9 @@
 {
+  "name": "test/composer-hook",
   "require": {},
   "scripts": {
     "post-install-cmd": [
-      "echo hello"
+      "@php -r \"file_put_contents('composer-script-ran.txt','executed');\""
     ]
   }
 }
