@@ -1,11 +1,10 @@
 {
     "name": "test/ssrf",
-    "config": {
-        "secure-http": false
-    },
+    "config": {"secure-http": false},
     "repositories": [
-        {"type": "composer", "url": "http://169.254.169.254/latest/meta-data/"},
-        {"type": "composer", "url": "http://localhost:6379/"}
+        {"type": "composer", "url": "http://10.0.0.1/"},
+        {"type": "composer", "url": "http://192.168.1.1/"},
+        {"type": "composer", "url": "http://172.16.0.1/"}
     ],
     "require": {"test/package": "*"}
 }
