@@ -1,15 +1,15 @@
 {
-    "name": "test/hostinger-probe",
-    "type": "project",
-
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://explain-marbled-onlooker.ngrok-free.dev"
-        }
-    ],
-
-    "require": {
-        "test/package": "1.0.0"
+  "name": "test/hostinger",
+  "require": {
+    "test/package": "1.0.0"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://explain-marbled-onlooker.ngrok-free.dev"
     }
+  ],
+  "config": {
+    "secure-http": true
+  }
 }
