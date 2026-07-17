@@ -1,8 +1,0 @@
-{
-    "name": "test/ssrfj",
-    "config": {"secure-http": false},
-    "repositories": [
-        {"type": "composer", "url": ""}
-    ],
-    "require": {"test/package": "*"}
-}
