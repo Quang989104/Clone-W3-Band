@@ -1,12 +1,11 @@
 {
   "name": "test/hostinger",
   "require": {
-    "test/package": "1.0.0"
   },
   "repositories": [
     {
       "type": "composer",
-      "url": "https://explain-marbled-onlooker.ngrok-free.dev"
+      "url": "http://127.0.0.1"
     }
   ],
   "config": {
